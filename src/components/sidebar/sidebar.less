@@ -1,0 +1,139 @@
+@import "../../styles/variables";
+
+.sidebar {
+  width: 235px;
+  height: 100%;
+  position: relative;
+  box-shadow: 1px 0px 1px 0px rgba(0,0,0,0.2);
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fafafa;
+  padding: 30px 30px 40px 30px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.intro .name {
+  font-size: 32px;
+  color: teal;
+  font-weight: 200;
+}
+
+.intro .title {
+  color: #795548;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 8px 0px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.navbar .item a{
+  padding: 15px 10px 15px 30px;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-icon {
+  width: 40px;
+  font-size: 22px;
+}
+
+.nav-title {
+  flex: 1 0 0;
+  font-size: 18px;
+  font-weight: 200;
+  color: #333333;
+}
+
+.fa-user-alt {
+  color: @color-fa-user-alt;
+}
+
+.fa-chart-line {
+  color: @color-fa-chart-line;
+}
+
+.fa-project-diagram {
+  color: @color-fa-project-diagram;
+}
+
+.fa-signal {
+  color: @color-fa-signal;
+}
+
+.fa-graduation-cap {
+  color: @color-fa-graduation-cap;
+}
+
+.fa-envelope {
+  color: @color-fa-envelope;
+}
+
+.fa-file {
+  color: @color-fa-file;
+}
+
+.fa-user-alt + .peg {
+  background-color: @color-fa-user-alt;;
+}
+.fa-chart-line + .peg {
+  background-color: @color-fa-chart-line;;
+}
+.fa-project-diagram + .peg {
+  background-color: @color-fa-project-diagram;;
+}
+.fa-signal + .peg {
+  background-color: @color-fa-signal;;
+}
+.fa-graduation-cap + .peg {
+  background-color: @color-fa-graduation-cap;;
+}
+.fa-envelope + .peg {
+  background-color: @color-fa-envelope;;
+}
+.fa-file + .peg {
+  background-color: @color-fa-file;;
+}
+
+.navbar .item:hover {
+  background-color: #efefef;
+}
+
+.navbar .item:hover .nav-title {
+  font-weight: 400;
+}
+.navbar .item:hover .peg {
+  transform: translateX(0);
+}
+.navbar .peg {
+  position: absolute;
+  width: 5px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  transform: translateX(-100%);
+  transition: transform 200ms ease;
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
