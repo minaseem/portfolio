@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "ALLOW_CONFIG_MUTATIONS=1 webpack-dev-server --mode development",
-    "build:prod": "npm run typescript && NODE_ENV=production webpack ./src/index.js --mode production -p",
-    "build:staging": "NODE_ENV=staging webpack ./src/index.js --mode production -p",
-    "build": "NODE_ENV=development webpack ./src/index.js --mode development -p",
+    "build:prod": "NODE_ENV=production webpack  --mode production -p",
+    "build:staging": "NODE_ENV=staging webpack --mode production -p",
+    "build": "NODE_ENV=development webpack --mode development -p",
     "typescript": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -42,6 +42,7 @@
   },
   "dependencies": {
     "preact": "^8.2.9",
-    "ramda": "^0.25.0"
+    "ramda": "^0.25.0",
+    "sw-helper": "^3.0.7"
   }
 }

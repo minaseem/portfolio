@@ -12,13 +12,14 @@ var hash = '';//".[contenthash]";
 
 module.exports = {
     webpack: {
+        entry: {
+            "sw": path.resolve(__dirname + "/../src/worker/sw"),
+            "main": path.resolve(__dirname + "/../src/index.js")
+        },
         output: {
             filename: '[name]' + hash + '.js',
             path: path.resolve(__dirname + "/../docs/"),
             chunkFilename: '[name]' + hash + '.bundle.js'
-        },
-        externals: {
-            Raven: "Raven"
         },
         plugins: [
             new MiniCssExtractPlugin({
