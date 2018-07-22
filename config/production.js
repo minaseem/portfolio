@@ -6,7 +6,7 @@ var path = require('path');
 var MiniCssExtractPlugin = require('mini-css-extract-plugin');
 var autoprefixer = require('autoprefixer');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-var WebpackMd5Hash = require('webpack-md5-hash');
+var WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 
 var hash = ".[contenthash]";
 
@@ -30,9 +30,10 @@ module.exports = {
                 template: path.resolve(__dirname + "/../src/index.html"),//'/src/index.html',
                 minify: {collapseWhitespace: true},
                 inject: true
+            }),
+            new WebpackCleanupPlugin({
+                exclude: ["CNAME"],
             })
-            // new WebpackMd5Hash()
-            //new webpack.LoaderOptionsPlugin({options: {}})
         ],
         module: {
             rules: [
