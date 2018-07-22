@@ -16,7 +16,7 @@ module.exports = {
         // entry: "./src/index.js",
         output: {
             filename: "[name].js",
-            path: path.resolve(__dirname + "/../build/"),
+            path: path.resolve(__dirname + "/../docs/"),
             chunkFilename: '[name].bundle.js'
         },
         externals: {

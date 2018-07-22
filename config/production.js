@@ -15,7 +15,7 @@ module.exports = {
     webpack: {
         output: {
             filename: '[name]' + hash + '.js',
-            path: path.resolve(__dirname + "/../build/"),
+            path: path.resolve(__dirname + "/../docs/"),
             chunkFilename: '[name]' + hash + '.bundle.js'
         },
         externals: {
