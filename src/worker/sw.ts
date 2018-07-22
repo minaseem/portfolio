@@ -13,7 +13,10 @@ var cacheFiles = [
         strategy: 'cacheFirstUpdate'
     },
     {
-        url: new RegExp(".*\\.(css|js|jpg|png|svg)")
+        url: new RegExp("((?!\/sw\\.js).)*((\\.)(js)){1}.*$")
+    },
+    {
+        url: new RegExp(".*\\.(css|jpg|png|svg)")
     }];
 
 var cacheName = 'v1';
