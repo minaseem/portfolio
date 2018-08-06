@@ -135,4 +135,42 @@ export const experience = [
         duration: 'Aug \'14 - Jan \'16',
         link: 'https://www.metricstream.com/'
     }
-]
+];
+export const NavabarItem = [
+    {
+        name: "About",
+        icon: 'fas fa-user-alt',
+        href: '#about'
+    },
+    {
+        name: "Experience",
+        icon: 'fas fa-chart-line',
+        href: '#experience'
+    },
+    /*{
+        name: "Projects",
+        icon: 'fas fa-project-diagram',
+        href: '#projects'
+    },*/
+    {
+        name: "Skills",
+        icon: 'fas fa-signal',
+        href: '#skills'
+    },
+    {
+        name: "Education",
+        icon: 'fas fa-graduation-cap',
+        href: '#education'
+    },
+    {
+        name: "Contact",
+        icon: 'fas fa-envelope',
+        href: '#contact'
+    },
+    {
+        name: "Resume",
+        icon: 'fas fa-file',
+        href: 'https://drive.google.com/file/d/1iqs9-0oCogjaCdMSjecX_XuYXfv9dK33/view',
+        target: "_blank"
+    }
+];

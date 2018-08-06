@@ -3,45 +3,9 @@
  */
 import {Component, h} from "preact";
 import IObject from "../../interfaces/IObject";
+import {NavabarItem} from "../../extras/data";
 
-const NavabarItem = [
-    {
-        name: "About",
-        icon: 'fas fa-user-alt',
-        href: '#about'
-    },
-    {
-        name: "Experience",
-        icon: 'fas fa-chart-line',
-        href: '#experience'
-    },
-    /*{
-        name: "Projects",
-        icon: 'fas fa-project-diagram',
-        href: '#projects'
-    },*/
-    {
-        name: "Skills",
-        icon: 'fas fa-signal',
-        href: '#skills'
-    },
-    {
-        name: "Education",
-        icon: 'fas fa-graduation-cap',
-        href: '#education'
-    },
-    {
-        name: "Contact",
-        icon: 'fas fa-envelope',
-        href: '#contact'
-    },
-    {
-        name: "Resume",
-        icon: 'fas fa-file',
-        href: 'https://drive.google.com/file/d/1PGrOVignNm4FnpZYHaokYt06jQn3gsPa/view?usp=sharing',
-        target: "_blank"
-    }
-]
+
 
 export default class Navbar extends Component {
     render() {
