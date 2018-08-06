@@ -8,7 +8,7 @@ export default class Banner extends Component {
     render() {
         return (
             <div class="banner" id="home">
-
+            Let's build Web!
             </div>
         )
     }
