@@ -22,6 +22,9 @@ module.exports = {
             chunkFilename: '[name]' + hash + '.bundle.js'
         },
         plugins: [
+            new WebpackCleanupPlugin({
+                exclude: ["CNAME", "favicon.ico"]
+            }),
             new MiniCssExtractPlugin({
                 filename: '[name]' + hash + '.css',
                 chunkFilename: '[id]' + hash + '.css'
@@ -30,9 +33,6 @@ module.exports = {
                 template: path.resolve(__dirname + "/../src/index.html"),//'/src/index.html',
                 minify: {collapseWhitespace: true},
                 inject: true
-            }),
-            new WebpackCleanupPlugin({
-                exclude: ["CNAME"],
             })
         ],
         module: {
