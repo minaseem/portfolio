@@ -30,7 +30,11 @@ module.exports = {
                 template: path.resolve(__dirname + "/../src/index.html"),//'/src/index.html',
                 minify: {collapseWhitespace: true},
                 inject: true
-            })
+            }),
+            new CopyWebpackPlugin([{
+                from: path.resolve(__dirname + '/../src/images/favicon.ico'),
+                to: path.resolve(__dirname + '/../docs/')
+            }])
         ],
         module: {
             rules: [
