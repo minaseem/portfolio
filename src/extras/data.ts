@@ -95,8 +95,8 @@ export const contacts = [
     {
         name: 'linkedin',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/in/imamudin-naseem-111aab88/',
-        text: 'https://www.linkedin.com/in/imamudin-naseem-111aab88/'
+        link: 'https://www.linkedin.com/in/imamudin-naseem/',
+        text: 'https://www.linkedin.com/in/imamudin-naseem/'
     },
     {
         name: 'github',
