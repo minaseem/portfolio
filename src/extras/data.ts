@@ -89,14 +89,14 @@ export const contacts = [
     {
         name: 'twitter',
         icon: 'twitter',
-        link: 'https://twitter.com/imamuddinnaseem',
-        text: 'https://twitter.com/imamuddinnaseem'
+        link: 'https://twitter.com/imamudinnaseem',
+        text: 'https://twitter.com/imamudinnaseem'
     },
     {
         name: 'linkedin',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/in/imamudin-naseem/',
-        text: 'https://www.linkedin.com/in/imamudin-naseem/'
+        link: 'https://www.linkedin.com/in/imamudin-naseem',
+        text: 'https://www.linkedin.com/in/imamudin-naseem'
     },
     {
         name: 'github',
