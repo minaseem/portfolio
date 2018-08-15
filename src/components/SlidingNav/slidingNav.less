@@ -1,0 +1,91 @@
+.sliding-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 100;
+}
+.white-bg {
+  background-color: #ffffff;
+}
+.full-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.sliding-nav .sliding-nav-item {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: teal;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  cursor: default;
+}
+.sliding-nav a {
+  border-bottom: 1px solid #efefef;
+}
+
+.sliding-nav .moving {
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes move-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+@keyframes move-down {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes come-up {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+@keyframes come-down {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.go-up {
+  animation: move-up cubic-bezier(0.42, 0, 0.18, 0.99) 200ms;
+}
+
+.go-down {
+  animation: move-down cubic-bezier(0.42, 0, 0.18, 0.99) 200ms;
+}
+
+.come-up {
+  animation: come-up cubic-bezier(0.42, 0, 0.18, 0.99) 200ms;
+}
+
+.come-down {
+  animation: come-down cubic-bezier(0.42, 0, 0.18, 0.99) 200ms;
+}
+
+@media only screen and (min-width: 769px) {
+  .sliding-nav {
+    display: none;
+  }
+}

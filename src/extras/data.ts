@@ -138,36 +138,43 @@ export const experience = [
 ];
 export const NavabarItem = [
     {
+        index: 0,
         name: "About",
         icon: 'fas fa-user-alt',
         href: '#about'
     },
     {
+        index: 1,
         name: "Experience",
         icon: 'fas fa-chart-line',
         href: '#experience'
     },
     /*{
+    index: ,
         name: "Projects",
         icon: 'fas fa-project-diagram',
         href: '#projects'
     },*/
     {
+        index: 2,
         name: "Skills",
         icon: 'fas fa-signal',
         href: '#skills'
     },
     {
+        index: 3,
         name: "Education",
         icon: 'fas fa-graduation-cap',
         href: '#education'
     },
     {
+        index: 4,
         name: "Contact",
         icon: 'fas fa-envelope',
         href: '#contact'
     },
     {
+        index: 5,
         name: "Resume",
         icon: 'fas fa-file',
         href: 'https://drive.google.com/file/d/1iqs9-0oCogjaCdMSjecX_XuYXfv9dK33/view',

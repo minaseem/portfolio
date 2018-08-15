@@ -23,7 +23,7 @@ class NavbarItem extends Component<IObject> {
         return (
             <li class="item">
                 <a href={props.data.href} target={data.target || "_self"} onClick={(e) => {
-                    if (!data.target || data.target === '_selef') {
+                    if (!data.target || data.target === '_self') {
                         e.preventDefault();
                         document.querySelector(props.data.href.toLowerCase()).scrollIntoView({
                             behavior: 'smooth',

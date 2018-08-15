@@ -4,6 +4,7 @@
 import {Component, h} from "preact";
 import "./sidebar.less";
 import Navbar from "./Nav";
+import SlidingNav from "../SlidingNav/SlidingNav";
 
 export default class Sidebar extends Component {
     render() {
