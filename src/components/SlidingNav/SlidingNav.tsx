@@ -23,7 +23,7 @@ export default class SlidingNav extends Component<Props> {
     }
 
     render(props, state) {
-        const slidingIndex = props.slidingNavLastIndex >= 0 ? props.slidingNavLastIndex : 3;
+        const slidingIndex = props.slidingNavLastIndex >= 0 ? props.slidingNavLastIndex : 2;
         let partitionIndex = state.disperseIndex >= 0 ? state.disperseIndex : slidingIndex;
         const getNavItem = (data) => <NavItem data={data} index={data.index} onClick={this.onNavClick}/>;
         const getPartitionedNav = R.compose(R.splitAt(partitionIndex + 1), R.map(getNavItem))
