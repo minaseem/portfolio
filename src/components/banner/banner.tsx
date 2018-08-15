@@ -8,7 +8,15 @@ export default class Banner extends Component {
     render() {
         return (
             <div class="banner" id="home">
-            Let's build Web!
+                <a className="intro" href="#home">
+                    <div className="name">
+                        Imamudin Naseem
+                    </div>
+                    <div className="title">Full Stack Web Developer</div>
+                </a>
+                <div className="banner-text">
+                  Let's build Web!
+                </div>
             </div>
         )
     }

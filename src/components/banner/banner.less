@@ -3,10 +3,30 @@
   background-size: cover;
   height: 100%;
   width: 100%;
-  font-size: 72px;
-  color: #efefef;
   font-family: monospace;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+.banner-text {
+  font-size: 72px;
+  color: #efefef;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner {
+    background-position: 100% !important;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .banner .intro {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .banner .intro .name{
+    font-size: 26px;
+  }
 }
