@@ -23,7 +23,7 @@ module.exports = {
         },
         plugins: [
             new WebpackCleanupPlugin({
-                exclude: ["CNAME", "favicon.ico", "images/author_avatar.jpg"]
+                exclude: ["CNAME", "favicon.ico", "images/author.jpg"]
             }),
             new MiniCssExtractPlugin({
                 filename: '[name]' + hash + '.css',
