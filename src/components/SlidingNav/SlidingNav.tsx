@@ -25,7 +25,7 @@ export default class SlidingNav extends Component<Props> {
     render(props, state) {
         const slidingIndex = props.slidingNavLastIndex >= 0 ? props.slidingNavLastIndex : 2;
         let partitionIndex = state.disperseIndex >= 0 ? state.disperseIndex : slidingIndex;
-        const getNavItem = (data) => <NavItem data={data} index={data.index} onClick={this.onNavClick}/>;
+        const getNavItem = (data) => <NavItem data={data} index={data.index} onClick={() => this.onNavClick(data.index)}/>;
         const getPartitionedNav = R.compose(R.splitAt(partitionIndex + 1), R.map(getNavItem))
         const [part1, part2] = getPartitionedNav(NavabarItem);
         const part1Grow = (partitionIndex + 1) / NavabarItem.length;
@@ -46,6 +46,13 @@ class NavItem extends Component<{ onClick: Function, data: IObject, index: numbe
 
     onItemClick = (e) => {
         let index = R.path(['props', 'index'], this);
+        let data = R.path(['props', 'data'], this);
+        if (!data.target || data.target === '_self') {
+            e.preventDefault();
+            document.querySelector(data.href.toLowerCase()).scrollIntoView({
+                block: 'start'
+            });
+        }
         this.props.onClick(index);
     }
 
