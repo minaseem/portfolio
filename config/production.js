@@ -7,6 +7,7 @@ var MiniCssExtractPlugin = require('mini-css-extract-plugin');
 var autoprefixer = require('autoprefixer');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var WebpackCleanupPlugin = require('webpack-cleanup-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 var hash = ".[contenthash]";
 
@@ -33,7 +34,19 @@ module.exports = {
                 template: path.resolve(__dirname + "/../src/index.html"),//'/src/index.html',
                 minify: {collapseWhitespace: true},
                 inject: true
-            })
+            }),
+            new CopyWebpackPlugin([{
+                from: path.resolve(__dirname + '/../src/manifest.json'),
+                to: path.resolve(__dirname + '/../docs/')
+            },
+                {
+                    from: path.resolve(__dirname + '/../src/images/author-192x192.jpg'),
+                    to: path.resolve(__dirname + '/../docs/images/')
+                },
+                {
+                    from: path.resolve(__dirname + '/../src/images/author-512x512.jpg'),
+                    to: path.resolve(__dirname + '/../docs/images/')
+                }])
         ],
         module: {
             rules: [
