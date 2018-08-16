@@ -1,0 +1,21 @@
+{
+  "short_name": "Imam",
+  "name": "Imamudin Naseem Portfolio",
+  "icons": [
+    {
+      "src": "/images/author-192x192.jpg",
+      "type": "image/jpg",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/author-512x512.jpg",
+      "type": "image/jpg",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#008080",
+  "display": "fullscreen",
+  "scope": "/",
+  "theme_color": "#008080"
+}
