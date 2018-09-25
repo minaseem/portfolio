@@ -7,7 +7,7 @@ import Card from "../card/card";
 export default class Education extends Component {
     render() {
         return (
-            <section id="education" class="education">
+            <section id="education" class="education content-item">
                 <header>Education</header>
                 <Card>
                     <div className="wrapper">

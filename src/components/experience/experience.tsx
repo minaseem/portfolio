@@ -9,7 +9,7 @@ import {experience} from "../../extras/data";
 export default class Experience extends Component {
     render() {
         return (
-            <section id="experience" className="experience">
+            <section id="experience" className="experience content-item">
                 <header>Experience</header>
                 {experience.map(x => <Exp data={x}/>)}
             </section>

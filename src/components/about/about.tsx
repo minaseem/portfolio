@@ -7,7 +7,7 @@ import Card from "../card/card";
 export default class About extends Component {
     render() {
         return (
-            <section id="about">
+            <section id="about" class="content-item">
                 <header>About</header>
                 <div className="about-me">I am a Software Engineer, working on web for past 4 years to make it a better
                     place

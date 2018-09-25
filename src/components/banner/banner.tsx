@@ -7,7 +7,7 @@ import "./banner.less"
 export default class Banner extends Component {
     render() {
         return (
-            <div class="banner" id="home">
+            <div class="banner content-item" id="home">
                 <a className="intro" href="#home">
                     <div className="name">
                         Imamudin Naseem

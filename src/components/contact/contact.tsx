@@ -9,7 +9,7 @@ import IObject from "../../interfaces/IObject";
 export default class Contacts extends Component {
     render() {
         return (
-            <section id="contact" className="contacts">
+            <section id="contact" className="contacts content-item">
                 <header>Contact</header>
                 <Card>
                     <div className="contact-wrapper">

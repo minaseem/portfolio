@@ -9,7 +9,7 @@ import {skills} from "../../extras/data";
 export default class Skills extends Component {
     render() {
         return (
-            <section id="skills">
+            <section id="skills" class="content-item">
                 <header>Skills</header>
                 <SkillGroup skill={skills.html}></SkillGroup>
                 <SkillGroup skill={skills.css}></SkillGroup>
