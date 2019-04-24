@@ -21,12 +21,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
           integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <script>
-      // if ('serviceWorker' in window.navigator) {
-      //   navigator.serviceWorker.register('./sw.js')
-      //       .catch(function (err) {
-      //         console.error(err)
-      //       })
-      // }
+      if ('serviceWorker' in window.navigator) {
+        navigator.serviceWorker.register('./sw.js')
+            .catch(function (err) {
+              console.error(err)
+            })
+      }
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128199150-1"></script>
