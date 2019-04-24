@@ -10,6 +10,7 @@ import Skills from "../skills/skills";
 import Education from "../education/education";
 import Contact from "../contact/contact";
 import SlidingNav from "../SlidingNav/SlidingNav";
+import Projects from "../Projects/Projects";
 
 
 export default class Content extends Component {
@@ -33,6 +34,7 @@ export default class Content extends Component {
                 <Banner></Banner>
                 <About></About>
                 <Experience></Experience>
+                {/*<Projects></Projects>*/}
                 <Skills></Skills>
                 <Education></Education>
                 <Contact></Contact>

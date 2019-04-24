@@ -182,7 +182,7 @@
   margin: 0 32px;
   border: 1px solid #efefef;
   border-radius: 50%;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   background-size: 70%;
   background-position: center;
 }
@@ -214,6 +214,7 @@
   font-size: 24px;
   color: @color-fa-chart-line
 }
+
 .exp-header {
   display: flex;
   justify-content: space-between;
@@ -223,12 +224,20 @@
   background: url("../../images/flock.png") no-repeat;
 }
 
+.paytm {
+  background: url("../../images/paytm.jpg") no-repeat;
+}
+
 .directi {
   background: url("../../images/directi.jpg") no-repeat;
 }
 
 .ola {
   background: url("../../images/ola.png") no-repeat;
+}
+
+.moonbase {
+  background: url("../../images/moonbase.png") no-repeat;
 }
 
 .metricstream {
@@ -275,43 +284,54 @@
 
 @media only screen and (max-width: 768px) {
   .skill-item {
-    margin :0 15px;
+    margin: 0 15px;
   }
+
   .contact-wrapper {
     flex-direction: row;
     flex-wrap: wrap;
   }
+
   .contact .title {
     display: none;
   }
+
   .contact-icon {
     margin: 0 30px;
     border: 1px solid #efefef;
   }
+
   .vit-icon {
     display: none;
   }
+
   .company-icon {
     height: 25px;
   }
+
   .exp-wrapper {
     padding: 15px;
   }
+
   .experience .duration {
     font-size: 10px;
   }
+
   .banner {
     background-position: 100% !important;
   }
+
   .experience .designation {
     text-transform: capitalize;
   }
+
   .education .courses {
     font-size: 14px;
     font-weight: 200;
     line-height: 24px;
     margin: 10px 10px 0 10px;
   }
+
   .content section header {
     padding: 20px;
     font-size: 32px;
@@ -325,6 +345,31 @@
   right: 17px;
   font-size: 25px;
   color: #009688;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  color: red;
+  .icon {
+    height: 60px;
+    width: 60px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+  }
+  .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .icon {
+      height: 60px;
+      width: 60px;
+      background-position: center;
+      background-size: cover;
+      border-radius: 50%;
+    }
+  }
 }
 
 @media only screen and (min-width: 769px) {

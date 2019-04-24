@@ -115,11 +115,18 @@ export const contacts = [
 
 export const experience = [
     {
+        company: 'Paytm',
+        designation: "Frontend Engineer",
+        icon: 'paytm',
+        link: 'https://paytm.com/',
+        duration: 'Sep \'18 - Present'
+    },
+    {
         company: 'Flock',
         designation: "Full-Stack Web Developer",
         icon: 'directi',
         link: 'https://www.directi.com',
-        duration: 'Dec \'16 - Present'
+        duration: 'Dec \'16 - Sep \'18'
     },
     {
         company: 'Ola',
@@ -150,34 +157,55 @@ export const NavabarItem = [
         href: '#experience'
     },
     /*{
-    index: ,
+        index: 2,
         name: "Projects",
         icon: 'fas fa-project-diagram',
         href: '#projects'
     },*/
     {
-        index: 2,
+        index: 3,
         name: "Skills",
         icon: 'fas fa-signal',
         href: '#skills'
     },
     {
-        index: 3,
+        index: 4,
         name: "Education",
         icon: 'fas fa-graduation-cap',
         href: '#education'
     },
     {
-        index: 4,
+        index: 5,
         name: "Contact",
         icon: 'fas fa-envelope',
         href: '#contact'
     },
     {
-        index: 5,
+        index: 6,
         name: "Resume",
         icon: 'fas fa-file',
         href: 'https://drive.google.com/file/d/1iqs9-0oCogjaCdMSjecX_XuYXfv9dK33/view',
         target: "_blank"
     }
 ];
+
+export const projects = [
+    {
+        name: '',
+        link: 'https://moonbase.exchange/',
+        icon: 'moonbase',
+        class: 'project-moonbase'
+    },
+    {
+        name: 'CoinMarketBook',
+        link: 'https://coinmarketbook.cc/',
+        icon: 'coinmarketbook',
+        class: 'project-coinmarketbook'
+    },
+    {
+        name: '',
+        link: 'https://demo.flock.com',
+        icon: 'flock',
+        class: 'project-flock'
+    }
+]
