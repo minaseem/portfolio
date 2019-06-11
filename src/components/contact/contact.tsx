@@ -16,6 +16,9 @@ export default class Contacts extends Component {
                         {contacts.map(x => <Contact data={x}/>)}
                     </div>
                 </Card>
+                <div className="extraInfo">
+                    This Portfolio is old. Please <a href="mailto:naseem1992@gmail.com">connect</a> with me directly to discuss the details
+                </div>
             </section>
         )
     }
