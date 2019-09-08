@@ -3,13 +3,13 @@
   "name": "Imamudin Naseem Portfolio",
   "icons": [
     {
-      "src": "/images/author-192x192.jpg",
-      "type": "image/jpg",
+      "src": "/images/author-192x192.png",
+      "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/images/author-512x512.jpg",
-      "type": "image/jpg",
+      "src": "/images/author-512x512.png",
+      "type": "image/png",
       "sizes": "512x512"
     }
   ],
