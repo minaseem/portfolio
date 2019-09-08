@@ -49,10 +49,6 @@ export const skills = {
                 icon: 'typescript'
             },
             {
-                name: 'Node',
-                icon: 'node'
-            },
-            {
                 name: 'React',
                 icon: 'react'
             },
@@ -69,6 +65,10 @@ export const skills = {
     backend: {
         name: 'Back-End',
         items: [
+            {
+                name: 'Node',
+                icon: 'node'
+            },
             {
                 name: 'Java',
                 icon: 'java'
