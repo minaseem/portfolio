@@ -40,11 +40,11 @@ module.exports = {
                     to: path.resolve(__dirname + '/../docs/')
                 },
                 {
-                    from: path.resolve(__dirname + '/../src/images/author-192x192.jpg'),
+                    from: path.resolve(__dirname + '/../src/images/author-192x192.png'),
                     to: path.resolve(__dirname + '/../docs/images/')
                 },
                 {
-                    from: path.resolve(__dirname + '/../src/images/author-512x512.jpg'),
+                    from: path.resolve(__dirname + '/../src/images/author-512x512.png'),
                     to: path.resolve(__dirname + '/../docs/images/')
                 }
             ])

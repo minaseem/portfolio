@@ -115,11 +115,18 @@ export const contacts = [
 
 export const experience = [
     {
+        company: 'Adobe',
+        designation: "Computer scientist",
+        icon: 'adobe',
+        link: 'https://www.adobe.com/',
+        duration: 'Mar \'21 - Present'
+    },
+    {
         company: 'Paytm',
         designation: "Frontend Engineer",
         icon: 'paytm',
         link: 'https://paytm.com/',
-        duration: 'Sep \'18 - Present'
+        duration: 'Sep \'18 - Jan \'21'
     },
     {
         company: 'Flock',
