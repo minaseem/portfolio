@@ -126,7 +126,7 @@ export const experience = [
         designation: "Frontend Engineer",
         icon: 'paytm',
         link: 'https://paytm.com/',
-        duration: 'Sep \'18 - Jan \'21'
+        duration: 'Sep \'18 - Feb \'21'
     },
     {
         company: 'Flock',
