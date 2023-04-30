@@ -24,7 +24,7 @@ class Intro extends Component {
                 <div className="name">
                     Imamudin Naseem
                 </div>
-                <div className="title">Full Stack Web Developer</div>
+                <div className="title">Software developer</div>
             </a>
         )
     }

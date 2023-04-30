@@ -12,7 +12,7 @@ export default class Banner extends Component {
                     <div className="name">
                         Imamudin Naseem
                     </div>
-                    <div className="title">Full Stack Web Developer</div>
+                    <div className="title">Software developer</div>
                 </a>
                 <div className="banner-text">
                   Let's build Web!
