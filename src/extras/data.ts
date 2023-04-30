@@ -186,14 +186,14 @@ export const NavabarItem = [
         name: "Contact",
         icon: 'fas fa-envelope',
         href: '#contact'
-    },
+    }/*,
     {
         index: 6,
         name: "Resume",
         icon: 'fas fa-file',
         href: 'https://drive.google.com/file/d/1iqs9-0oCogjaCdMSjecX_XuYXfv9dK33/view',
         target: "_blank"
-    }
+    }*/
 ];
 
 export const projects = [
